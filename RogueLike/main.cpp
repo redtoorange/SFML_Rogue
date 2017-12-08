@@ -5,16 +5,30 @@
 #include "TransformComponent.h"
 using namespace std;
 
+//class TestScreen : public Screen
+//{
+//public:
+//	TestScreen()
+//	{
+//		cout << "TestScreen Built" << endl;
+//		auto p = new Player;
+//
+//		addGameObject(p);
+//	}
+//
+//	~TestScreen()
+//	{
+//		
+//	}
+//};
 
 
 int main()
 {
-
-	Screen s;
-	s.addGameObject(new Player);
+//	TestScreen ts;
 
 	GameEngine engine;
-	engine.setCurrentScreen(&s);
+//	engine.setCurrentScreen(&ts);
 	engine.gameLoop();
 
 

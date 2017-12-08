@@ -2,11 +2,14 @@
 
 GameObject::GameObject()
 {
+	transform = new TransformComponent(this);
+	addComponent( transform );
 }
 
 
 GameObject::~GameObject()
 {
+	transform = nullptr;
 }
 
 
@@ -37,4 +40,10 @@ Component* GameObject::getComponent(std::string type )
 	}
 
 	return nullptr;
+}
+
+
+TransformComponent* GameObject::getTransform() const
+{
+	return transform;
 }

@@ -1,5 +1,11 @@
-#pragma once
+#ifndef TRANSFORM_COMPONENT_H
+#define TRANSFORM_COMPONENT_H
+
 #include "Component.h"
+
+class GameObject;
+class Component;
+
 class TransformComponent : public Component
 {
 public:
@@ -21,3 +27,4 @@ private:
 	float rotation{0};
 };
 
+#endif

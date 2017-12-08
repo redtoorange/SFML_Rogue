@@ -1,9 +1,14 @@
-#pragma once
+#ifndef GAMEOBJECT_H
+#define GAMEOBJECT_H
+
 #include <vector>
-#include "Component.h"
-#include <SFML/Graphics/RenderWindow.hpp>
+#include <SFML/Graphics.hpp>
 #include <memory>
+
+#include "TransformComponent.h"
+
 class Component;
+class TransformComponent;
 
 class GameObject
 {
@@ -17,7 +22,11 @@ public:
 	void addComponent( Component*  comp );
 	Component* getComponent( std::string type );
 
+	TransformComponent* getTransform() const;
+
 private:
 	std::vector<std::unique_ptr<Component>> components;
+	TransformComponent * transform = nullptr;
 };
 
+#endif

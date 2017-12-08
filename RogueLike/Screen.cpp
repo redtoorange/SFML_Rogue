@@ -1,9 +1,10 @@
 #include "Screen.h"
-
+#include <iostream>
 
 
 Screen::Screen()
 {
+	std::cout << "Screen Built" << std::endl;
 }
 
 

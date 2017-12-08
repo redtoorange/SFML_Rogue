@@ -16,6 +16,7 @@ GameEngine::~GameEngine()
 void GameEngine::initWindow()
 {
 	window.create(sf::VideoMode{ 800, 600 }, "SFML Window");
+	window.setFramerateLimit(60);
 }
 
 void GameEngine::pollEvents()

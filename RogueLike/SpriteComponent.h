@@ -1,4 +1,6 @@
-#pragma once
+#ifndef SPRITE_COMPONENT_H
+#define SPRITE_COMPONENT_H
+
 #include "Component.h"
 #include "TransformComponent.h"
 #include <SFML/Graphics.hpp>
@@ -20,3 +22,4 @@ private:
 	sf::Vector2u texSize;
 };
 
+#endif

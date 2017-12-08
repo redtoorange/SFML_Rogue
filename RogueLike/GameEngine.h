@@ -1,4 +1,6 @@
-#pragma once
+#ifndef GAME_ENGINE_H
+#define GAME_ENGINE_H
+
 #include <SFML/Graphics.hpp>
 #include "GameObject.h"
 #include "Screen.h"
@@ -25,3 +27,4 @@ private:
 	void pollEvents();
 };
 
+#endif

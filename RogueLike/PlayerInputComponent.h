@@ -1,4 +1,6 @@
-#pragma once
+#ifndef PLAYER_INPUT_COMPONENT_H
+#define PLAYER_INPUT_COMPONENT_H
+
 #include "Component.h"
 #include "TransformComponent.h"
 
@@ -17,3 +19,4 @@ private:
 	int speed = 100;
 };
 
+#endif

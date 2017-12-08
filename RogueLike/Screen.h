@@ -1,11 +1,13 @@
-#pragma once
+#ifndef SCREEN_H
+#define SCREEN_H
+
 #include <SFML/Graphics.hpp>
 #include "GameObject.h"
 
 class Screen
 {
 public:
-	Screen();
+	
 	~Screen();
 
 	void addGameObject(GameObject*  go);
@@ -15,7 +17,9 @@ public:
 	void render( sf::RenderWindow& window);
 	void hide();
 
-private:
+protected:
 	std::vector<std::unique_ptr<GameObject>> gameObjects;
+	Screen();
 };
 
+#endif

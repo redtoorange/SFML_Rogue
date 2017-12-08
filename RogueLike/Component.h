@@ -1,6 +1,8 @@
-#pragma once
-#include "GameObject.h"
+#ifndef COMPONENT_H
+#define COMPONENT_H
+
 #include <SFML/Graphics.hpp>
+#include "GameObject.h"
 
 class GameObject;
 
@@ -24,3 +26,4 @@ protected:
 	std::string type = "component";
 };
 
+#endif

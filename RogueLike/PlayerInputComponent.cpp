@@ -1,7 +1,5 @@
 #include "PlayerInputComponent.h"
 
-
-
 PlayerInputComponent::PlayerInputComponent(GameObject* parent) : Component(parent)
 {
 	type = "inputComponent";
